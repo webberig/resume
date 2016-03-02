@@ -1,0 +1,22 @@
+{
+  "name": "skeleton-simple",
+  "authors": [
+    "Mathieu Maes <mathieu@webberig.be>"
+  ],
+  "description": "CV Mathieu Maes",
+  "main": "web/index.html",
+  "homepage": "http://www.mathieumaes.be",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "modernizr": "^3.3.1",
+    "bootstrap": "^3.3.6"
+  }
+}
