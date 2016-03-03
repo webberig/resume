@@ -1,11 +1,15 @@
 {
-  "name": "skeleton-simple",
+  "name": "cv",
+  "description": "",
+  "main": "index.js",
   "authors": [
     "Mathieu Maes <mathieu@webberig.be>"
   ],
-  "description": "CV Mathieu Maes",
-  "main": "web/index.html",
-  "homepage": "http://www.mathieumaes.be",
+  "license": "ISC",
+  "homepage": "https://github.com/webberig/resume",
+  "moduleType": [
+    "globals"
+  ],
   "private": true,
   "ignore": [
     "**/.*",
@@ -15,8 +19,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^2.2.1",
-    "modernizr": "^3.3.1",
-    "bootstrap": "^3.3.6"
+    "material-design-lite": "^1.1.1",
+    "Materialize": "materialize#^0.97.5"
   }
 }
