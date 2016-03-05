@@ -1,0 +1,13 @@
+header {
+  background-image: url(../2015-04-06-DSC_1139-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin-bottom: -13vw;
+  &:after {
+    padding-top: 33%;
+    display: block;
+    content: '';
+  }
+}
