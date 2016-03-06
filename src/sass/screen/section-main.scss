@@ -10,4 +10,41 @@
   .mdl-card__actions {
     text-align: center;
   }
+
+  .mdl-grid--no-spacing > .mdl-cell-portrait {
+    margin: 0 auto;
+  }
+
+  .portrait {
+    padding: 30px;
+    text-align: center;
+  }
+
+  h1 {
+    @extend .mdl-typography--font-light;
+    color: black;
+    margin: 0;
+    font-size: 60px;
+    small {
+      line-height: 1;
+      display: block;
+      font-size: 18px;
+    }
+
+  }
+
+  hr {
+    margin: 30px 0;
+  }
+  dl {
+    dt {
+      float: left;
+      width: 120px;
+      clear: left;
+    }
+    dt, dd {
+      margin-bottom: 10px;
+    }
+
+  }
 }

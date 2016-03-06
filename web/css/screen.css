@@ -1167,7 +1167,7 @@ ul, ol {
 .mdl-typography--font-thin {
   font-weight: 200 !important; }
 
-.mdl-typography--font-light {
+.mdl-typography--font-light, #section-main h1 {
   font-weight: 300 !important; }
 
 .mdl-typography--font-regular {
@@ -5831,8 +5831,15 @@ input.mdl-button[type="submit"] {
             border-left-color: white;
             right: 4px; } }
 
+.img-responsive {
+  display: inline-block;
+  max-width: 100%; }
+
+.img-round {
+  border-radius: 50%; }
+
 header {
-  background-image: url(../2015-04-06-DSC_1139-2.jpg);
+  background-image: url(../img/header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -5850,6 +5857,33 @@ header {
 
 #section-main .mdl-card__actions {
   text-align: center; }
+
+#section-main .mdl-grid--no-spacing > .mdl-cell-portrait {
+  margin: 0 auto; }
+
+#section-main .portrait {
+  padding: 30px;
+  text-align: center; }
+
+#section-main h1 {
+  color: black;
+  margin: 0;
+  font-size: 60px; }
+  #section-main h1 small {
+    line-height: 1;
+    display: block;
+    font-size: 18px; }
+
+#section-main hr {
+  margin: 30px 0; }
+
+#section-main dl dt {
+  float: left;
+  width: 120px;
+  clear: left; }
+
+#section-main dl dt, #section-main dl dd {
+  margin-bottom: 10px; }
 
 #section-education {
   margin-top: 75px; }

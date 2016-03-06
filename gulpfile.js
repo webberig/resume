@@ -3,6 +3,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var path = require("path");
+var image = require('gulp-image');
 
 var config = {
     src: 'src/',
@@ -20,6 +21,16 @@ gulp.task('sass', function () {
             ]
         }).on('error', sass.logError))
         .pipe(gulp.dest(path.resolve(config.dist, 'css')));
+});
+
+gulp.task('image', function () {
+    gulp.src(path.resolve(config.src,  'img/*'))
+        .pipe(image({
+            jpegRecompress: true,
+            jpegoptim: true,
+            mozjpeg: true
+        }))
+        .pipe(gulp.dest(path.resolve(config.dist, 'img')));
 });
 
 gulp.task('sass:watch', function () {
