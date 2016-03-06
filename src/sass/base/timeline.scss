@@ -4,6 +4,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
   & > li {
     margin-bottom: 15px;
 
@@ -16,7 +17,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 35px;
     @include clearfix();
     position: relative;
 
@@ -30,7 +30,7 @@
       left: 50%;
       margin-left: -2px;
       top: 15px;
-      bottom: 70px;
+      bottom: 5px;
     }
     & > li {
       width: 50%;
