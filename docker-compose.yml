@@ -1,0 +1,7 @@
+nginx:
+    image: nginx
+    restart: always
+    volumes:
+        - ./web:/usr/share/nginx/html:ro
+    environment:
+        VIRTUAL_HOST: www.mathieumaes.be
