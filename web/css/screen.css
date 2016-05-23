@@ -507,6 +507,12 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */ }
+
+@media print, (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */ }
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -516,13 +522,11 @@ textarea {
   *,
   *:before,
   *:after,
-  *:first-letter,
-  *:first-line {
+  *:first-letter {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster: http://www.sanbeiji.com/archives/953 */
-    box-shadow: none !important;
-    text-shadow: none !important; }
+    box-shadow: none !important; }
   a,
   a:visited {
     text-decoration: underline; }
@@ -6117,6 +6121,10 @@ header {
   margin-top: 30px; }
   #section-activities h2 {
     text-align: center; }
+  #section-activities .mdl-card {
+    width: 100%;
+    height: auto;
+    min-height: 130px; }
 
 #section-skills {
   margin-top: 75px;
